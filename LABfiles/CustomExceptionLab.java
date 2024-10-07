@@ -1,7 +1,28 @@
 package miscellaneous;
-
-
 import java.util.Scanner;
+class InvalidAmountException extends Exception {
+	private String message;
+	public InvalidAmountException(String msg) {
+		message=msg;
+	}
+	public String getMessage() {
+		return message;
+		
+	}
+
+}
+class InsufficientFundsException extends Exception {
+	private String message;
+	public InsufficientFundsException(String msg) {
+		message=msg;
+	}
+	public String getMessage() {
+		return message;
+		
+	}
+
+}
+
 
 class CustomBank{
 	Scanner sc=new Scanner(System.in);
