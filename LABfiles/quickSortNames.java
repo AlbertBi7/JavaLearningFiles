@@ -50,13 +50,6 @@ public class quickSortNames {
         	System.out.print("Enter the name of Person "+(i+1)+":");
             array[i] = scanner.nextLine();
         }
-
-        System.out.println("The Names before sorting is: ");
-        for (String name : array) {
-            System.out.println(name);
-        }
-        System.out.println();
-
         quickSort(array, 0, n - 1);
 
         System.out.println("The Names after sorting is: ");
